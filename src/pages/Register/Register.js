@@ -28,41 +28,35 @@ const Register = () => {
             setError("As senhas não são iguais!")
             return
         }
-        
-
-        
-
-
-
     }
 
 
   return (
-    <div>
-        <h1 className="text-center">
+    <div className='flex flex-col justify-center items-center'>
+        <h1 className="text-center mb-10 p-4 text-4xl font-bold mt-2">
             Cadastre-se
         </h1>
-        <form className="max-h-10 mx-auto my-0" onSubmit={handleSubmit}>
-            <label className="flex flex-col mb-1 ">
-                <span className="text-left font-bold mb-1.5">Nome: </span>
+        <form className="max-h-10 mx-auto my-0 flex flex-col items-center" onSubmit={handleSubmit}>
+            <label className="flex flex-col mb-5 justify-center items-center ">
+                <span className="text-center">Nome: </span>
                 <input type="text" required placeholder='Insira seu nome...' name='displayName' value={displayName} 
                 onChange={(e) => setDisplayName(e.target.value)}/>
             </label>
-            <label className="flex flex-col mb-1">
+            <label className="flex flex-col mb-5 justify-center items-center">
                 <span>E-mail: </span>
                 <input type="email" required placeholder='Insira seu e-mail...' name='email' value={email} 
                 onChange={(e) => setEmail(e.target.value)} />
             </label>
-            <label className="flex flex-col mb-1">
+            <label className="flex flex-col mb-5 justify-center items-center ">
                 <span>Senha: </span>
                 <input type="password" required placeholder='Insira sua senha...' name='password' value={password} 
                 onChange={(e) => setPassWord(e.target.value)} />
             </label>
-            <label className="flex flex-col mb-1">
+            <label className="flex flex-col mb-5 justify-center items-center ">
                 <span>Confirmar senha: </span>
                 <input type="text" required placeholder='Confirme sua senha...' name='confirmPassword' value={confirmPassword} onChange={(e) => setConfirmPassword(confirmPassword)} />
             </label>
-            <button className='btn'>Cadastrar</button>
+            <button className='btn mt-4'>Cadastrar</button>
         </form>
     </div>
   )

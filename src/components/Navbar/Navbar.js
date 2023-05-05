@@ -6,7 +6,7 @@ import { NavLink, Link } from 'react-router-dom'
 
 const Navbar = () => {
   return (
-    <nav className='flex shadow-sm shadow-black justify-between items-center py-2 px-8'>
+    <nav className='flex shadow-sm shadow-black justify-between items-center py-5 px-8'>
       <Link to={ "/" }>
         <h1 className='text-3xl'>Mini<span className='text-red-400 font-semibold'>Blog</span></h1>
       </Link>

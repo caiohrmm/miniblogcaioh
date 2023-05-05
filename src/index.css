@@ -3,7 +3,8 @@
 @tailwind utilities;
 
 .container {
-  min-height: 60vh;
+  width: 100vw;
+  height: 100vh;
   margin-bottom: 5em;
 }
 
